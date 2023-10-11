@@ -1,0 +1,1127 @@
+/* ----------------------------------------------------------------------------------------------- */
+/* GENERIC PROPERTY */
+.gradient-background {
+    /* background: linear-gradient(300deg, #BCA37F, #EAD7BB, #113946); */
+    background: linear-gradient(300deg, #9EB384, #513252, #9d5487);
+    background-size: 180% 180%;
+    animation: gradient-animation 10s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Classe per rappresentare le stelle cadenti */
+.star {
+    position: absolute;
+    background: #fff; /* Colore delle stelle (bianco) */
+    width: 2px;
+    height: 2px;
+    z-index: -1;
+    animation: star-fall 5s linear infinite; /* Animazione di caduta delle stelle */
+}
+
+@keyframes star-fall {
+    to {
+        transform: translateY(100vh); /* Caduta verticale al 100% dell'altezza della viewport */
+    }
+}
+
+.gradient-background-a {
+    /* background: linear-gradient(300deg, #BCA37F, #EAD7BB, #113946); */
+    background: linear-gradient(300deg, #CDFAD5, #F6FDC3, #CDFAD5);
+    background-size: 180% 180%;
+    animation: gradient-animation 10s ease infinite;
+}
+
+.gradient-background-b {
+    /* background: linear-gradient(300deg, #BCA37F, #EAD7BB, #113946); */
+    background: linear-gradient(300deg, #BCA37F, #815430, #2b1033);
+    background-size: 180% 180%;
+    animation: gradient-animation 10s ease infinite;
+}
+
+
+body {
+    min-height: 100%;
+    margin: 0;
+    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Onest', sans-serif;
+}
+
+#carousel-content {
+    max-height: 900px;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------- */
+/* FONT PROPERTY */
+.h1-font {
+    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Libre Baskerville', serif;
+}
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------- */
+/* CARD PROPERTY */
+.card-left {
+    border-radius: 100px;
+    max-width: 600px;
+    min-height: 400px;
+    margin-left: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card-full {
+    border-radius: 100px;
+    min-height: 400px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card-fit {
+    border-radius: 100px;
+    width: fit-content;
+    min-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card-title {
+    border-radius: 100px;
+    width: fit-content;
+    min-height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------------- */
+/* FLEX PROPERTY */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-center-static {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------------- */
+/* TEXT PROPERTY */
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.fs-40 {
+    font-size: 40px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.float-text-left {
+    float: left;
+}
+
+.width-fit-content{
+    max-width: fit-content;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------- */
+/* BORDER PROPERTY */
+.border-circle {
+    border-radius: 50%;
+}
+
+.border-radius-20 {
+    border-radius: 20px;
+}
+
+.border-solid-3-d1r {
+    border: 3px solid #662549;
+}
+
+.border-solid-2-d1r {
+    border: 2px solid #662549;
+}
+
+.border-solid-2-d1b {
+    border: 2px solid #254766;
+}
+
+.rounded-bottom {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* PADDING PROPERTY */
+.padding-20 {
+    padding: 20px;
+}
+
+.padding-10 {
+    padding: 10px;
+}
+
+.padding-5 {
+    padding: 5px;
+}
+
+
+/* ----------------------------------------------------------------------------------------------- */
+
+/* MARGIN PROPERTY */
+.margin-left-20 {
+    margin-left: 20px;
+}
+
+.margin-left-200 {
+    margin-left: 200px;
+}
+
+.margin-left-auto {
+    margin-left: auto;
+}
+
+.margin-right-200 {
+    margin-right: 500px;
+}
+
+.margin-right-auto {
+    margin-right: auto;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0;
+}
+
+.margin-bottom-5 {
+    margin-bottom: 5px;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-15 {
+    margin-bottom: 15px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-25 {
+    margin-bottom: 25px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+.margin-top-0 {
+    margin-top: 0;
+}
+
+.margin-top-5 {
+    margin-top: 5px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.margin-top-15 {
+    margin-top: 15px;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.margin-top-25 {
+    margin-top: 25px;
+}
+
+.margin-top-30 {
+    margin-top: 30px;
+}
+
+.margin-top-n5 {
+    margin-top: -5px;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------- */
+/* ELEMENT PROPERTY */
+
+ul {
+    padding-inline-start: 0;
+}
+
+li {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.link {
+    color: black;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 8px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    box-shadow: #7A4069 -5px 5px;
+    border: #2b1033 solid 3px;
+    background: linear-gradient(300deg, #B5CB99, #FCE09B, #B5CB99);
+    background-size: 180% 180%;
+    transition: background-position 0.7s ease;
+}
+
+
+a:hover {
+    background-position: 100% 0;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------- */
+/* CLASS FOR COLORS */
+.dark-grey {
+    background-color: #1e1d23;
+}
+
+.yellow {
+    background-color: #f1cf0a;
+}
+
+.dark-yellow {
+    background-color: #ccb227;
+}
+
+.orange {
+    background-color: #F39F5A;
+}
+
+.dark1-red {
+    background-color: #662549;
+}
+
+.dark2-red {
+    background-color: #AE445A;
+}
+
+.an-white {
+    color: antiquewhite;
+}
+
+.dark1-blue {
+    background-color: #324a86;
+}
+
+.beige{
+    background-color: #BCA37F;
+}
+
+.blue {
+    background-color: #102C57;
+}
+
+.green {
+    background-color: #513252;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------------- */
+/* CSS PER IL NAVIGATOR */
+.nav {
+    width: 100%;
+    height: 50px;
+    margin-top: 0;
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-bott-border {
+    border-bottom: 5px solid #2b1033;
+}
+
+
+/* ----------------------------------------------------------------------------------------------- */
+/* CSS PER I BOTTONI */
+.btn {
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: #7A4069 -5px 5px;
+    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Onest', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border: #2b1033 solid 3px;
+    background: linear-gradient(300deg, #B5CB99, #FCE09B, #B5CB99);
+    background-size: 180% 180%;
+    transition: background-position 0.7s ease;
+}
+
+.btn:hover {
+    background-position: 100% 0;
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+/* CSS PER IL DIV HERO CON FOTO E FRASE DI PRESENTAZIONE */
+.section1 {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+
+.section2 {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.background-card {
+    border-radius: 100px;
+    max-width: fit-content;
+    margin-top: 50px;
+    height: fit-content;
+    align-items: center;
+    border: #2b1033 solid 3px;
+}
+
+.hero-div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: fit-content;
+    padding: 30px;
+    align-content: center;
+}
+
+.testo-flex {
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-div>h2 {
+    text-align: left;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.hero-div>div>img {
+    border-radius: 50%;
+    border: #2b1033 solid 3px;
+}
+
+
+/* ----------------------------------------------------------------------------------------------- */
+/* CSS PER IL DIV HERO CON FOTO E FRASE DI PRESENTAZIONE (TABLET)*/
+@media (max-width: 1024px) {
+
+    .section1 {
+        height: fit-content;
+    }
+
+    .background-card {
+        border-radius: 100px;
+        max-width: 800px;
+        min-height: fit-content;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+    }
+
+    .hero-div {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+
+    .testo-flex {
+        text-align: left;
+        padding: 20px;
+        margin-top: 50px;
+    }
+
+    .hero-div>div>h1 {
+        font-family: 'IBM Plex Serif', serif;
+        font-family: 'Libre Baskerville', serif;
+        z-index: 1;
+        margin-top: 50px;
+    }
+
+    .hero-div>h2 {
+        text-align: left;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    .hero-div>div>img {
+        border-radius: 50%;
+        margin-top: 50px;
+    }
+
+    .margin-phone {
+        margin-top: 0;
+    }
+
+}
+
+
+/* ----------------------------------------------------------------------------------------------- */
+/* CSS PER IL DIV HERO CON FOTO E FRASE DI PRESENTAZIONE (TABLET PICCOLO)*/
+@media (max-width: 700px) {
+
+
+    .section1 {
+        height: fit-content;
+    }
+
+    .hero-div>div>h1 {
+        margin-top: 0;
+    }
+}
+
+
+/* ----------------------------------------------------------------------------------------------- */
+/* CSS PER IL DIV HERO CON FOTO E FRASE DI PRESENTAZIONE (CELLULARE MEDIA)*/
+@media (max-width: 570px) {
+    /* FLEX CENTER */
+
+
+    .flex-phone {
+        justify-content: center;
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .text-phone {
+        text-align: center;
+    }
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------- */
+/* CSS PER IL DIV HERO CON FOTO E FRASE DI PRESENTAZIONE (CELLULARE MEDIA)*/
+@media (max-width: 570px) {
+    /* FLEX CENTER */
+
+
+    .flex-phone {
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .text-phone {
+        text-align: center;
+    }
+}
+
+
+/* ----------------------------------------------------------------------------------------------- */
+/* CSS PER IL DIV HERO CON FOTO E FRASE DI PRESENTAZIONE (CELLULARE PICCOLO)*/
+@media (max-width: 480px) {
+
+    .section1 {
+        height: fit-content;
+    }
+
+
+    .background-card {
+        border-radius: 100px;
+        max-width: 800px;
+        max-height: fit-content;
+        min-height: fit-content;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 10px;
+
+    }
+
+    .hero-div {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+
+    .testo-flex {
+        text-align: left;
+        padding: 20px;
+        font-size: 12px;
+    }
+
+    .hero-div>div>h1 {
+        font-family: 'IBM Plex Serif', serif;
+        font-family: 'Libre Baskerville', serif;
+        z-index: 1;
+        margin-top: 0;
+    }
+
+    .hero-div>h2 {
+        text-align: left;
+        margin-bottom: 50px;
+    }
+
+    .hero-div>div>img {
+        border-radius: 50%;
+    }
+
+    .foto-profilo {
+        height: 200px;
+    }
+
+    /* FLEX CENTER */
+    .flex-phone {
+        justify-content: center;
+    }
+
+    .text-phone {
+        text-align: center;
+    }
+
+    .margin-phone {
+        margin-top: 0;
+    }
+}
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------- */
+/* CSS PER IL DIV SEPARATORE */
+.separatore {
+    width: 100%;
+    height: 15px;
+    margin-top: -10px;
+}
+
+.separatore-1 {
+    width: 100%;
+    height: 15px;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------------- */
+/* CSS PER IL DIV PRESENTAZIONE */
+.section2 {
+    margin-top: -5px;
+    min-height: 500px;
+    padding: 20px;
+}
+
+#presentation {
+    max-width: 600px;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------------- */
+/* CSS PER IL DIV PROGETTI */
+.section3 {
+    margin-top: -5px;
+    min-height: fit-content;
+    padding: 20px;
+}
+
+.section3>div>h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------- */
+/* CSS PER IL DIV CONDIVISIONE CONTATTAMI */
+.section4 {
+    margin-top: -5px;
+    min-height: fit-content;
+    padding: 20px;
+}
+
+.section4>div>h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+/* ----------------------------------------------------------------------------------------------- */
+/* CSS PER IL FOOTER */
+.section5 {
+    margin-top: -5px;
+    min-height: fit-content;
+    padding: 20px;
+}
+
+.section5>div>h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* CSS PER LA GRIGLIA CERTIFICATIONS.HTML A SCHERMO INTERO SU PC*/
+.section-carousel {
+    min-height: 1000px;
+}
+
+.grid-div1 {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: fit-content;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px 240px 60px 250px;
+}
+
+/* IMMAGINI PRIMA GRIGLIA */
+#i1 {
+    grid-area: 2 / 1 / 5 /1;
+}
+
+#i2 {
+    grid-area: 2 / 2 / 5 /2;
+}
+
+#i3 {
+    grid-area: 2 / 3 / 3 /4;
+}
+
+/* LINK SECONDA GRIGLIA */
+/* 
+#t1-2 {
+
+}
+
+#t2-2 {
+
+}
+
+#t3-2 {
+    
+}
+
+#t4-2 {
+    
+}
+
+#t5-2 {
+    
+}
+
+#t6-2 {
+    
+}
+
+#t7-2 {
+    
+}
+
+#t8-2 {
+    
+} */
+
+/* IMMAGINI SECONDA GRIGLIA*/
+/* 
+#i1-2 {
+
+}
+
+#i2-2 {
+
+}
+
+#i3-2 {
+    
+}
+
+#i4-2 {
+    
+}
+
+#i5-2 {
+    
+}
+
+#i6-2 {
+    
+}
+
+#i7-2 {
+    
+}
+
+#i8-2 {
+    
+} */
+
+#i7-2 {
+    grid-area: 6 / 1 / 6 / 1;
+}
+
+#i8-2 {
+    grid-area: 6 / 2 / 6 / 2;
+}
+
+.grid-div2 {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: fit-content;
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px 240px 60px 240px;
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+/* CSS PER LA GRIGLIA CON LE CERTIFICAZIONI (TABLET)*/
+@media (max-width: 1250px) {
+
+
+    .section-carousel {
+        min-height: 1000px;
+    }
+
+    .grid-div1 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 60px 600px 60px 240px;
+    }
+
+    /* TITOLO 1 */
+
+    #t1 {
+        grid-area: 1 / 1 / 1 / 1;
+    }
+
+    /* IMMAGINE 1 */
+    #i1 {
+        grid-area: 2 / 1 / 2 / 1;
+    }
+
+    /* TITOLO 2 */
+    #t2 {
+        grid-area: 1 / 2 / 1 / 2;
+    }
+
+    /* IMMAGINE 2 */
+    #i2 {
+        grid-area: 2 / 2 / 2 / 2;
+    }
+
+    /* TITOLO 3 */
+    #t3 {
+        grid-area: 3 / 1 /3 / 1;
+    }
+
+    /* IMMAGINE 3 */
+    #i3 {
+        grid-area: 4 / 1 / 4 / 1;
+    }
+
+    /* TITOLO 4 */
+    #t4 {
+        grid-area: 3 / 2 / 3 / 2;
+    }
+
+    /* IMMAGINE 4 */
+    #i4 {
+        grid-area: 4 / 2 / 4 / 2;
+    }
+
+    .minor {
+        height: 600px;
+    }
+
+    .grid-div2 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 60px 240px;
+    }
+
+    /* IMMAGINE BASH MASTERY */
+    #i1-2 {
+        grid-area: 2 / 1 / 2 / 1;
+    }
+
+    /* IMMAGINE LINUX MASTERY */
+    #i2-2 {
+        grid-area: 2 / 2 / 2 / 2;
+    }
+
+    /* TITOLO LINEE ELETTRICHE ALTO VOLTAGGIO*/
+    #t4-2 {
+        grid-area: 3 / 2 / 3 / 2;
+    }
+
+    /* IMMAGINE LINEE ELETTRICHE ALTO VOLTAGGIO*/
+    #i4-2 {
+        grid-area: 4 / 2 / 4 / 2;
+    }
+
+    /* IMMAGINE COMMVAULT FONDATION */
+    #i7-2 {
+        grid-area: 9 / 1 / 9 / 1;
+    }
+
+    /* IMMAGINE COMMVAULT ADVANCED */
+    #i8-2 {
+        grid-area: 9 / 2 / 9 / 2;
+    }
+
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------- */
+/* CSS PER LA GRIGLIA CON LE CERTIFICAZIONI (cELLULARE)*/
+@media (max-width: 950px) {
+
+
+    .section-carousel {
+        min-height: 1000px;
+    }
+
+    .grid-div1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px 400px 60px 400px 60px 240px 60px 240px;
+    }
+
+    .minor {
+        height: 400px;
+    }
+
+    /* TITOLO 1 */
+    #t1 {
+        grid-area: 1 / 1 / 1 / 1;
+    }
+
+    /* IMMAGINE 1 */
+    #i1 {
+        grid-area: 2 / 1 / 2 / 1;
+    }
+
+    /* TITOLO 2 */
+    #t2 {
+        grid-area: 3 / 1 / 3 / 1;
+    }
+
+    /* IMMAGINE 3 */
+    #i2 {
+        grid-area: 4 / 1 / 4 / 1;
+    }
+
+    /* TITOLO 3 */
+    #t3 {
+        grid-area: 5 / 1 / 5 / 1;
+    }
+
+    /* IMMAGINE 3 */
+    #i3 {
+        grid-area: 6 / 1 / 6 / 1;
+    }
+
+    /* TITOLO 3 */
+    #t4 {
+        grid-area: 7 / 1 / 7 / 1;
+    }
+
+    /* IMMAGINE 4 */
+    #i4 {
+        grid-area: 8 / 1 / 8 / 1;
+    }
+
+
+
+    .grid-div2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px 240px;
+    }
+
+    /* TITOLO 1 */
+    #t1-2 {
+        grid-area: 1 / 1 / 1 / 1;
+    }
+
+    /* IMMAGINE 1 */
+    #i1-2 {
+        grid-area: 2 / 1 / 2 / 1;
+    }
+
+    /* TITOLO 2 */
+    #t2-2 {
+        grid-area: 3 / 1 /3 / 1;
+    }
+
+    /* IMMAGINE 2 */
+    #i2-2 {
+        grid-area: 4 / 1 / 4 / 1;
+    }
+
+    /* TITOLO 3 */
+    #t3-2 {
+        grid-area: 5 / 1 /5 / 1;
+    }
+
+    /* IMMAGINE 3 */
+    #i3-2 {
+        grid-area: 6 / 1 / 6 / 1;
+    }
+
+    /* TITOLO 4 */
+    #t4-2 {
+        grid-area: 7 / 1 / 7 / 1;
+    }
+
+    /* IMMAGINE 4 */
+    #i4-2 {
+        grid-area: 8 / 1 / 8 / 1;
+    }
+
+    /* TITOLO 5 */
+    #t5-2 {
+        grid-area: 9 / 1 / 9 / 1;
+    }
+
+    /* IMMAGINE 5 */
+    #i5-2 {
+        grid-area: 10 / 1 / 10 / 1;
+    }
+
+    /* TITOLO 6 */
+    #t6-2 {
+        grid-area: 11 / 1 / 11 / 1;
+    }
+
+    /* IMMAGINE 6 */
+    #i6-2 {
+        grid-area: 12 / 1 / 12 / 1;
+    }
+
+    /* TESTO COMMVAULT FONDATION */
+    #t7-2 {
+        grid-area: 13 / 1 / 13 / 1;
+    }
+
+    /* IMMAGINE COMMVAULT FONDATION */
+    #i7-2 {
+        grid-area: 14 / 1 / 14 / 1;
+    }
+
+
+    /* IMMAGINE COMMVAULT ADVANCED */
+    #t8-2 {
+        grid-area: 15 / 1 / 15 / 1;
+    }
+
+    /* IMMAGINE COMMVAULT ADVANCED */
+    #i8-2 {
+        grid-area: 16 / 1 / 16 / 1;
+    }
+
+}
