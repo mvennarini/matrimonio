@@ -19,7 +19,6 @@
     }
 }
 
-/* Classe per rappresentare le stelle cadenti */
 .star {
     position: absolute;
     background: #fff; /* Colore delle stelle (bianco) */
@@ -29,11 +28,24 @@
     animation: star-fall 5s linear infinite; /* Animazione di caduta delle stelle */
 }
 
+body {
+    overflow: hidden;
+}
+
+#footer {
+    z-index: 1;
+    position: relative;
+}
+
 @keyframes star-fall {
-    to {
-        transform: translateY(100vh); /* Caduta verticale al 100% dell'altezza della viewport */
+    0% {
+        transform: translateY(-10vh);
+    }
+    100% {
+        transform: translateY(110vh);
     }
 }
+
 
 .gradient-background-a {
     /* background: linear-gradient(300deg, #BCA37F, #EAD7BB, #113946); */
@@ -51,15 +63,30 @@
 
 
 body {
-    min-height: 100%;
+    min-height: 100vh; /* Imposta l'altezza minima dell'intera pagina come altezza della finestra del browser */
     margin: 0;
     font-family: 'IBM Plex Serif', serif;
     font-family: 'Libre Baskerville', serif;
     font-family: 'Onest', sans-serif;
+    position: relative; /* Imposta la posizione su "relative" per consentire il posizionamento corretto del footer */
 }
 
-#carousel-content {
-    max-height: 900px;
+#main-container {
+    min-height: 100vh; /* Imposta l'altezza minima del contenitore principale come altezza della finestra del browser */
+    position: relative; /* Imposta la posizione su "relative" per consentire il posizionamento corretto del footer */
+}
+
+/* Stile per fissare il footer in basso */
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Aggiungi margine inferiore a section2 per evitare di coprire il footer */
+.section2 {
+    margin-bottom: 80px; /* Altezza del footer */
 }
 
 
@@ -328,6 +355,18 @@ li {
     margin-bottom: 25px;
 }
 
+#infobox > li {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+#infobox > h1 {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+
+
 a {
     text-decoration: none;
     color: black;
@@ -353,6 +392,15 @@ a:hover {
     background-position: 100% 0;
 }
 
+img {
+    border-radius: 50%;
+
+}
+
+img {
+    max-width: fit-content;
+    border: #2b1033 solid 3px;
+}
 
 
 
@@ -423,6 +471,23 @@ a:hover {
     border-bottom: 5px solid #2b1033;
 }
 
+#navbar > div > button{
+    margin-top: 0;
+}
+
+#cont-nav {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    position:absolute;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+
+
+
+
 
 /* ----------------------------------------------------------------------------------------------- */
 /* CSS PER I BOTTONI */
@@ -461,6 +526,19 @@ a:hover {
     margin-top: 0;
     display: flex;
     justify-content: center;
+}
+
+/* #infobox {
+    padding-top: 0;
+    padding-bottom: 0;
+} */
+
+#infobox > h1 {
+    margin-bottom: 0;
+}
+
+#location {
+    margin-top: 20px;
 }
 
 
@@ -528,11 +606,11 @@ a:hover {
 
     }
 
-    .testo-flex {
+    /* .testo-flex {
         text-align: left;
         padding: 20px;
         margin-top: 50px;
-    }
+    } */
 
     .hero-div>div>h1 {
         font-family: 'IBM Plex Serif', serif;
@@ -640,7 +718,7 @@ a:hover {
     }
 
     .testo-flex {
-        text-align: left;
+        text-align: center;
         padding: 20px;
         font-size: 12px;
     }
@@ -661,9 +739,7 @@ a:hover {
         border-radius: 50%;
     }
 
-    .foto-profilo {
-        height: 200px;
-    }
+
 
     /* FLEX CENTER */
     .flex-phone {
@@ -676,6 +752,15 @@ a:hover {
 
     .margin-phone {
         margin-top: 0;
+    }
+
+    
+
+}
+
+@media (max-height: 778px){
+    .foto-profilo {
+        display: none;
     }
 }
 
@@ -1125,3 +1210,8 @@ a:hover {
     }
 
 }
+
+
+
+
+
