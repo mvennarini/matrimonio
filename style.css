@@ -759,7 +759,7 @@ img {
 }
 
 @media (max-height: 778px){
-    .foto-profilo {
+    #infobox > img {
         display: none;
     }
 }
