@@ -57,7 +57,8 @@
         <section id="welcome" class=" section1">
             <div class="text-center flex-center-static margin-top-0">
                 <div class="beige width-fit-content border-radius-20" style="border: #2b1033 solid 3px; margin-top: 10px;">
-                    <h2 class="text-phone margin-phone padding-10" style="margin: 0; font-size: 20px;">IT78O0347501605CC0012311310</h2>
+                    <h2 class="text-phone margin-phone padding-10" style="margin: 0; font-size: 20px;">Clicca sull'IBAN per copiare</h2>
+                    <h2 id="iban" class="text-phone margin-phone padding-10" style="margin: 0; font-size: 20px; color:rgb(60, 90, 144);">IT78O0347501605CC0012311310</h2>
                     <h2 class="text-phone margin-phone padding-10" style="margin: 0; font-size: 20px;">Causale: Regalo Matrimonio</h2>
                     <h2 class="text-phone margin-phone padding-10" style="margin: 0; font-size: 20px;">Intestatario <br> Michele Vennarini/Lorena Lanzi</h2>
                     
@@ -97,24 +98,8 @@
         </div>
     </section>
 
-    <script>
-        function createStars() {
-            const stars = 100; // Numero di stelle cadenti
-            const container = document.getElementById('main-container'); // Usa il main-container come contenitore
-        
-            for (let i = 0; i < stars; i++) {
-                const star = document.createElement('div');
-                star.className = 'star';
-                star.style.left = `${Math.random() * 100}%`; // Posizione orizzontale casuale
-                star.style.top = `${Math.random() * 100}%`; // Posizione verticale casuale
-                star.style.animationDuration = `${Math.random() * 2 + 3}s`; // Durata casuale dell'animazione
-                container.appendChild(star);
-            }
-        }
-    
-        
-        createStars(); // Chiama la funzione per creare le stelle
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>

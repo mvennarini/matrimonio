@@ -761,10 +761,19 @@ img {
 @media (max-height: 778px){
     #infobox > img {
         display: none;
+        
     }
 }
 
+@media (max-height: 700px){
+    #infobox {
+        height: fit-content;
+    }
 
+    .hero-div {
+        padding: 0;
+    }
+}
 
 
 
